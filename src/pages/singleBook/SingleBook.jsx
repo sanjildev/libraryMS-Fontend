@@ -8,7 +8,7 @@ const SingleBook = () => {
   const [book,setBook]=useState({})
   const {id}=useParams()
   const fetchBook=async()=>{
-    const response=await axios.get(`http://localhost:5000/book/${id}`)
+    const response=await axios.get(`https://libraryms-dso4.onrender.com/book/${id}`)
     if(response.status===200){
       setBook(response.data.data)
     }
@@ -17,7 +17,7 @@ const SingleBook = () => {
     fetchBook()
   },[])
   const deleteBook=async()=>{
-    const response=await axios.delete(`http://localhost:5000/book/${id}`)
+    const response=await axios.delete(`https://libraryms-dso4.onrender.com/book/${id}`)
     if(response.status===200){
      navigate('/')
     }
