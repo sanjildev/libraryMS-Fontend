@@ -1,0 +1,9 @@
+sop and cors
+yesma chai frontend lai chai --> current origin vanx
+backend lai chai --> cross origin vanx
+sop(same origin policy)
+yesma chai protocol,port,hostname of cross origin and current origin should be same
+by default port no of https -->443
+by default port no of https -->80
+
+cors(cross origin resource sharing)
